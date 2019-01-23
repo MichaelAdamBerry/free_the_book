@@ -1,12 +1,11 @@
 import React from "react";
-import { getVolumes } from "../api/google";
 import SearchBox from "./SearchBox";
-import ListView from "./ListView";
+import { Redirect } from "react-router-dom";
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { query: "", loading: false, volumes: [] };
+    this.state = { query: "", submitted: false, volumes: [] };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -17,20 +16,12 @@ export default class Home extends React.Component {
 
   async handleSubmit(event) {
     event.preventDefault();
-    const volumes = await getVolumes(this.state.query);
-    this.setState({ volumes, loading: true });
+    this.setState({ submitted: true });
   }
 
-  renderListView = () => {
-    if (this.state.loading === true) {
-      return <ListView volumes={this.state.volumes} />;
-    } else {
-      return null;
-    }
-  };
-
   render() {
-    const { query } = this.state.query;
+    const { query, submitted } = this.state;
+
     return (
       <div className="main">
         <SearchBox
@@ -38,7 +29,9 @@ export default class Home extends React.Component {
           handleSubmit={this.handleSubmit}
           value={query}
         />
-        {this.renderListView()}
+        {!submitted === false && (
+          <Redirect to={{ pathname: `/list`, search: `q=${query}` }} />
+        )}
       </div>
     );
   }

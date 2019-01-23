@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
+import List from "./components/List";
 import "./App.css";
 import { getVolumes } from "./api/google";
 class App extends Component {
@@ -15,7 +16,8 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="/list" component={List} />
         </Switch>
       </Router>
     );
