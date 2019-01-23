@@ -1,7 +1,6 @@
 import React from "react";
 import { getVolumes } from "../api/google";
 import SearchBox from "./SearchBox";
-import RenderList from "./RenderList";
 import ListView from "./ListView";
 
 export default class Home extends React.Component {
