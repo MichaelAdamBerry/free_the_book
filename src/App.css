@@ -71,6 +71,7 @@ a {
 
 .listContainer {
   max-width: 500px;
+  margin: auto;
 }
 .listContainer h3 {
   font-style: italic;
@@ -83,4 +84,8 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.card .stars {
+  padding: 1em;
 }

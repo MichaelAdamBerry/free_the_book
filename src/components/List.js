@@ -1,7 +1,7 @@
 import React from "react";
 import { getVolumeList } from "../api/google";
 import queryString from "query-string";
-
+import Stars from "./Stars";
 import { Link } from "react-router-dom";
 import CoverImg from "./CoverImg";
 
@@ -19,7 +19,15 @@ function ListView({ volumes }) {
                   <div className="thumbnailContainer">
                     <CoverImg volumeInfo={volume.volumeInfo} maxRes={false} />
                   </div>
-                  <h5>rating: {volume.volumeInfo.rating}</h5>
+                  <div className="stars">
+                    <span>
+                      {volume.volumeInfo.averageRating && (
+                        <Stars
+                          averageRating={volume.volumeInfo.averageRating}
+                        />
+                      )}
+                    </span>
+                  </div>
                 </div>
               </Link>
             </div>
