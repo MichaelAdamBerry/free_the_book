@@ -1,38 +1,22 @@
 import React from "react";
 import { getVolumeList } from "../api/google";
 import queryString from "query-string";
-import Stars from "./Stars";
-import { Link } from "react-router-dom";
-import CoverImg from "./CoverImg";
+import Card from "./Card";
+import { Spring } from "react-spring";
 
 function ListView({ volumes }) {
   return (
     <ul>
       {volumes.map(volume => (
-        <div className="cardContainer">
-          <li key={volume.id}>
-            <div className="card">
-              <Link to={{ pathname: "/volume", search: `id=${volume.id}` }}>
-                <div>
-                  <h4>{volume.volumeInfo.title}</h4>
-                  <h5>by {volume.volumeInfo.authors[0]}</h5>
-                  <div className="thumbnailContainer">
-                    <CoverImg volumeInfo={volume.volumeInfo} maxRes={false} />
-                  </div>
-                  <div className="stars">
-                    <span>
-                      {volume.volumeInfo.averageRating && (
-                        <Stars
-                          averageRating={volume.volumeInfo.averageRating}
-                        />
-                      )}
-                    </span>
-                  </div>
-                </div>
-              </Link>
+        <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+          {({ opacity }) => (
+            <div style={{ opacity }} className="cardContainer">
+              <li key={volume.id}>
+                <Card volume={volume} />
+              </li>
             </div>
-          </li>
-        </div>
+          )}
+        </Spring>
       ))}
     </ul>
   );
