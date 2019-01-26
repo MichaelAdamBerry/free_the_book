@@ -1,19 +1,16 @@
 import React from "react";
 import queryString from "query-string";
 import { getVolume } from "../api/google";
+import CoverImg from "./CoverImg";
+
+//TODO handle error if image doesn't exist
 
 function VolumeView({ volume }) {
   const { volumeInfo, averageRating } = volume;
-  const {
-    title,
-    authors,
-    publishedDate,
-    description,
-    pageCount,
-    imageLinks
-  } = volumeInfo;
+  const { title, authors, publishedDate, description, pageCount } = volumeInfo;
+
   console.log("authors ", authors);
-  console.log("image links ", imageLinks);
+
   console.log("average rating is ", averageRating);
   return (
     <div>
@@ -22,7 +19,7 @@ function VolumeView({ volume }) {
       <p>{pageCount}</p>
       <p>{averageRating}</p>
       <p dangerouslySetInnerHTML={{ __html: `${description}` }} />
-      <img src={imageLinks.medium} alt="book cover" />
+      <CoverImg volumeInfo={volumeInfo} />
     </div>
   );
 }
