@@ -11,6 +11,60 @@
   background-color: #e8e3e3;
 }
 
+.volumeContainer {
+  padding: 2em;
+  color: #4a4646;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-position: center;
+}
+
+.volumeContainer .card {
+  width: 350px;
+  margin: auto;
+  background-color: #fae5ff;
+  border: solid 1px #b9b9b9;
+}
+
+.description {
+  padding: 1em;
+  margin: 1em;
+  border: solid 1px #ccc9c9;
+  background-color: #e2f5f3;
+  box-shadow: 3px 3px 3px #a7a7a2;
+}
+
+.volumeContent .miniHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniHeader div {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2em;
+}
+.miniHeader img {
+  width: auto;
+  height: fit-content;
+  margin: 5px;
+  border: solid 1px #2f2f2f;
+}
+
+.miniHeader h5 {
+  margin-bottom: 5px;
+}
+
+.miniHeader p {
+  font-size: x-small;
+  margin-top: 0;
+}
+
 label {
   padding: 1em;
 }
