@@ -4,7 +4,7 @@ import Search from "./Search";
 export default class Home extends React.Component {
   render() {
     return (
-      <div className="main">
+      <div className="home">
         <h3>Find a good book</h3>
         <Search
           render={({ actions, query }) => {
@@ -12,7 +12,7 @@ export default class Home extends React.Component {
               <div className="homeSearch">
                 <form onSubmit={actions.submitQuery}>
                   <label htmlFor="homeSearch">Search for a book title</label>
-                  <input 
+                  <input
                     className="homeSearch"
                     aria-label="Search for a book title"
                     aria-required="true"

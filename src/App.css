@@ -1,32 +1,86 @@
-.App {
+#root {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  flex-direction: column;
+}
+.main {
+  flex: 1 0 auto; /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+  background-color: #e8e3e3;
+}
+
+label {
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.main::after {
+  content: "\00a0"; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+.header {
+  flex: none;
+  height: 75px;
+  color: lightgray;
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1em;
+}
+
+.homeSearch form {
+  line-height: 75px;
+}
+
+.siteTitle {
+  line-height: 2em;
+  margin: 0;
+  font-size: 2em;
+}
+
+.card {
+  background-color: #f1f1f1;
+  margin: 30px;
+  padding: 50px;
+  box-shadow: 5px 5px 5px #cccccc;
+  border-radius: 3px;
+  min-height: 400px;
+  width: 250px;
+}
+
+.card a {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.listContainer {
+  max-width: 500px;
+}
+.listContainer h3 {
+  font-style: italic;
+  font-size: smaller;
+  padding: 1em;
+  font-weight: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card .thumbnailContainer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -19,7 +19,7 @@ function VolumeView({ volume }) {
       <p>{pageCount}</p>
       <p>{averageRating}</p>
       <p dangerouslySetInnerHTML={{ __html: `${description}` }} />
-      <CoverImg volumeInfo={volumeInfo} />
+      <CoverImg volumeInfo={volumeInfo} maxRes={true} />
     </div>
   );
 }
