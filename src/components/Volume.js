@@ -3,8 +3,21 @@ import queryString from "query-string";
 import { getVolume } from "../api/google";
 import CoverImg from "./CoverImg";
 import moment from "moment";
+import { Spring } from "react-spring";
 
 //TODO handle error if no catagories exist
+
+function RenderVolume({ volume }) {
+  return (
+    <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={300}>
+      {({ opacity }) => (
+        <div style={{ opacity }}>
+          <VolumeView volume={volume} />
+        </div>
+      )}
+    </Spring>
+  );
+}
 
 function VolumeView({ volume }) {
   const { volumeInfo, averageRating } = volume;
@@ -14,7 +27,8 @@ function VolumeView({ volume }) {
     categories,
     publishedDate,
     description,
-    pageCount
+    pageCount,
+    previewLink
   } = volumeInfo;
 
   console.log("authors ", authors);
@@ -27,25 +41,30 @@ function VolumeView({ volume }) {
         backgroundImage:
           "url(https://cdn5.teebooks.com/3611-thickbox_default/bookshelves-u-set-of-6.jpg?_ga=2.14652146.43169510.1548520510-1695472323.1548520510&_gac=1.115906804.1548520510.Cj0KCQiAp7DiBRDdARIsABIMfoCTQ5fz-1VPkGuMO2mY6l6mHSByDcuxX2cXho97IYXJlpHZl5i9fEgaAhcPEALw_wcB)"
       }}>
-      <div className="volumeContent card">
-        <div className="miniHeader">
-          <div>
-            <CoverImg volumeInfo={volumeInfo} maxRes={false} />
+      <div className="volumeCardContainer">
+        <div className="volumeContent card">
+          <div className="miniHeader">
+            <div>
+              <CoverImg volumeInfo={volumeInfo} maxRes={false} />
+            </div>
+            <div>
+              <h5>{title}</h5>
+              <p>{authors[0]}</p>
+              <p>Published: {moment(publishedDate).format("Y")}</p>
+              <p>{pageCount} pages</p>
+              <p>
+                {categories.map(e => (
+                  <span>{e} </span>
+                ))}
+              </p>
+            </div>
+          </div>
+          <div className="description">
+            <p dangerouslySetInnerHTML={{ __html: `${description}` }} />
           </div>
           <div>
-            <h5>{title}</h5>
-            <p>{authors[0]}</p>
-            <p>Published: {moment(publishedDate).format("Y")}</p>
-            <p>{pageCount} pages</p>
-            <p>
-              {categories.map(e => (
-                <span>{e} </span>
-              ))}
-            </p>
+            <a href={previewLink}>Read Now</a>
           </div>
-        </div>
-        <div className="description">
-          <p dangerouslySetInnerHTML={{ __html: `${description}` }} />
         </div>
       </div>
     </div>
@@ -68,6 +87,6 @@ export default class Volume extends React.Component {
   }
   render() {
     const { loading, volume } = this.state;
-    return <div>{!loading && <VolumeView volume={volume} />}</div>;
+    return <div>{!loading && <RenderVolume volume={volume} />}</div>;
   }
 }

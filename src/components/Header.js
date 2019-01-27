@@ -8,11 +8,11 @@ const Header = () => {
       <Search
         render={({ actions, query }) => {
           return (
-            <div className="homeSearch">
+            <div className="headerSearch">
               <form onSubmit={actions.submitQuery}>
-                <label htmlFor="homeSearch">Search for a book title</label>
+                <label htmlFor="headerSearch">Search for a book title</label>
                 <input
-                  className="homeSearch"
+                  className="headerSearch"
                   aria-label="Search for a book title"
                   aria-required="true"
                   type="text"
