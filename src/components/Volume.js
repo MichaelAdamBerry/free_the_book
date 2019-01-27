@@ -4,7 +4,7 @@ import { getVolume } from "../api/google";
 import CoverImg from "./CoverImg";
 import moment from "moment";
 
-//TODO handle error if image doesn't exist
+//TODO handle error if no catagories exist
 
 function VolumeView({ volume }) {
   const { volumeInfo, averageRating } = volume;

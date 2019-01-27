@@ -4,23 +4,41 @@ import queryString from "query-string";
 import Card from "./Card";
 import { Spring } from "react-spring";
 
-function ListView({ volumes }) {
+function ListItem({ volume }) {
+  const delay = Math.floor(Math.random() * 2000 + 500);
   return (
-    <ul>
-      {volumes.map(volume => (
-        <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
-          {({ opacity }) => (
-            <div style={{ opacity }} className="cardContainer">
-              <li key={volume.id}>
-                <Card volume={volume} />
-              </li>
-            </div>
-          )}
-        </Spring>
-      ))}
-    </ul>
+    <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={delay}>
+      {({ opacity }) => (
+        <div style={{ opacity }} className="column">
+          <Card volume={volume} />
+        </div>
+      )}
+    </Spring>
   );
 }
+
+function ListView({ volumes }) {
+  const middleIndex = Math.floor(volumes.length / 2);
+  const colA = volumes.slice(0, middleIndex);
+  const colB = volumes.slice(middleIndex);
+  return (
+    <div className="listWrapper">
+      {colA.map((element, index) => {
+        return (
+          <div className="row">
+            <div className="column">
+              <ListItem volume={element} />
+            </div>
+            <div className="column">
+              <ListItem volume={colB[index]} />
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default class List extends React.Component {
   constructor(props) {
     super(props);
