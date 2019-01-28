@@ -7,6 +7,16 @@ import { Spring } from "react-spring";
 
 //TODO handle error if no catagories exist
 
+function Catagories({ categories }) {
+  return (
+    <p>
+      {categories.map(e => (
+        <span>{e} </span>
+      ))}
+    </p>
+  );
+}
+
 function RenderVolume({ volume }) {
   return (
     <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={300}>
@@ -24,7 +34,6 @@ function VolumeView({ volume }) {
   const {
     title,
     authors,
-    categories,
     publishedDate,
     description,
     pageCount,
@@ -35,12 +44,7 @@ function VolumeView({ volume }) {
 
   console.log("average rating is ", averageRating);
   return (
-    <div
-      className="volumeContainer"
-      style={{
-        backgroundImage:
-          "url(https://cdn5.teebooks.com/3611-thickbox_default/bookshelves-u-set-of-6.jpg?_ga=2.14652146.43169510.1548520510-1695472323.1548520510&_gac=1.115906804.1548520510.Cj0KCQiAp7DiBRDdARIsABIMfoCTQ5fz-1VPkGuMO2mY6l6mHSByDcuxX2cXho97IYXJlpHZl5i9fEgaAhcPEALw_wcB)"
-      }}>
+    <div className="volumeContainer">
       <div className="volumeCardContainer">
         <div className="volumeContent card">
           <div className="miniHeader">
@@ -52,11 +56,9 @@ function VolumeView({ volume }) {
               <p>{authors[0]}</p>
               <p>Published: {moment(publishedDate).format("Y")}</p>
               <p>{pageCount} pages</p>
-              <p>
-                {categories.map(e => (
-                  <span>{e} </span>
-                ))}
-              </p>
+              {volumeInfo.categories && (
+                <Catagories categories={volumeInfo.categories} />
+              )}
             </div>
           </div>
           <div className="description">
