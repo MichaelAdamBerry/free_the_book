@@ -11,7 +11,8 @@ class Card extends React.Component {
     };
   }
 
-  getProps = () => {
+  getValidProps = () => {
+    //verifies that each prop exists in volumeInfo and returns prop object
     const volume = this.state.volume;
     const volumeInfo = this.state.volumeInfo;
     return {
@@ -19,11 +20,16 @@ class Card extends React.Component {
       title: volumeInfo.title ? volumeInfo.title : "",
       author: volumeInfo.authors ? volumeInfo.authors[0] : "",
       averageRating: volumeInfo.averageRating ? volumeInfo.averageRating : "",
-      imageLinks: volumeInfo.imageLinks ? volumeInfo.imageLinks : ""
+      imageLinks: volumeInfo.imageLinks ? volumeInfo.imageLinks : "",
+      description: volumeInfo.description ? volumeInfo.description : "",
+      publishedDate: volumeInfo.publishedDate ? volumeInfo.publishedDate : "",
+      pageCount: volumeInfo.pageCount ? volumeInfo.pageCount : "",
+      previewLink: volumeInfo.previewLink ? volumeInfo.previewLink : "",
+      categories: volumeInfo.categories ? volumeInfo.categories : ""
     };
   };
   render() {
-    return this.props.render({ props: this.getProps() });
+    return this.props.render({ props: this.getValidProps() });
   }
 }
 
