@@ -1,7 +1,7 @@
 import React from "react";
 import queryString from "query-string";
-import { getVolume } from "../api/google";
-import CoverImg from "./CoverImg";
+import { getVolume } from "../../utils/api/google";
+import CoverImg from "../CoverImg";
 import moment from "moment";
 import { Spring } from "react-spring";
 import PropTypes from "prop-types";
@@ -33,7 +33,7 @@ const RenderVolume = ({ volume }) => {
 };
 
 const VolumeView = ({ volume }) => {
-  const { volumeInfo, averageRating } = volume;
+  const { volumeInfo } = volume;
   const {
     title,
     authors,

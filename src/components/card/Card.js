@@ -1,5 +1,5 @@
 import React from "react";
-import CoverImg from "./CoverImg";
+import CoverImg from "../CoverImg";
 import Stars from "./Stars";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";

@@ -1,7 +1,7 @@
 import React from "react";
-import { getVolumeList } from "../api/google";
+import { getVolumeList } from "../../utils/api/google";
 import queryString from "query-string";
-import Card from "./Card";
+import Card from "../card/Card";
 import { Spring } from "react-spring";
 import PropTypes from "prop-types";
 

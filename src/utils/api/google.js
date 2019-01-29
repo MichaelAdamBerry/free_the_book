@@ -5,7 +5,6 @@ export async function getVolumeList(query) {
       method: "GET"
     });
     let items = await data.json();
-    console.log(items);
     return items.items;
   } catch (err) {
     console.error(err);

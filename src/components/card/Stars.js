@@ -11,7 +11,7 @@ const Stars = ({ averageRating }) => {
   return (
     <>
       {[...Array(full)].map((el, ind) => (
-        <span>
+        <span key={Math.random() * 10}>
           <FontAwesomeIcon icon={faStar} style={{ color: "#e2c93d" }} />
         </span>
       ))}
@@ -23,7 +23,7 @@ const Stars = ({ averageRating }) => {
 };
 
 Stars.propTypes = {
-  averageRating: PropTypes.string.isRequired
+  averageRating: PropTypes.number.isRequired
 };
 
 export default Stars;
