@@ -1,5 +1,4 @@
 import React from "react";
-import Search from "./Search";
 import PropTypes from "prop-types";
 
 const HomeSearchView = ({ actions, query }) => {
@@ -9,7 +8,6 @@ const HomeSearchView = ({ actions, query }) => {
         <div className="welcomeTitle" data-testid="welcomeTitle">
           <h4>Welcome to free the book</h4>
         </div>
-
         <div>
           <div>
             <p>Enter a book title to get started</p>
@@ -25,7 +23,9 @@ const HomeSearchView = ({ actions, query }) => {
               value={query}
               onChange={actions.typeLetter}
             />
-            <button type="submit">Find Books</button>
+            <button data-testid="findBooksBtn" type="submit">
+              Find Books
+            </button>
           </div>
         </div>
         <div className="sources">
@@ -39,26 +39,9 @@ const HomeSearchView = ({ actions, query }) => {
   );
 };
 
-HomeSearchView.PropTypes = {
+HomeSearchView.propTypes = {
   actions: PropTypes.object.isRequired,
   query: PropTypes.string.isRequired
 };
 
-const HomeView = () => {
-  return (
-    <div className="home" data-testid="home">
-      <h3>Find a good book</h3>
-      <Search
-        render={({ actions, query }) => {
-          return <HomeSearchView actions={actions} query={query} />;
-        }}
-      />
-    </div>
-  );
-};
-
-export default class Home extends React.Component {
-  render() {
-    return <HomeView />;
-  }
-}
+export default HomeSearchView;
