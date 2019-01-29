@@ -4,10 +4,9 @@ import { getVolume } from "../api/google";
 import CoverImg from "./CoverImg";
 import moment from "moment";
 import { Spring } from "react-spring";
+import PropTypes from "prop-types";
 
-//TODO handle error if no catagories exist
-
-function Catagories({ categories }) {
+const Catagories = ({ categories }) => {
   return (
     <p>
       {categories.map(e => (
@@ -15,9 +14,13 @@ function Catagories({ categories }) {
       ))}
     </p>
   );
-}
+};
 
-function RenderVolume({ volume }) {
+Catagories.propTypes = {
+  catagories: PropTypes.array
+};
+
+const RenderVolume = ({ volume }) => {
   return (
     <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={300}>
       {({ opacity }) => (
@@ -27,9 +30,9 @@ function RenderVolume({ volume }) {
       )}
     </Spring>
   );
-}
+};
 
-function VolumeView({ volume }) {
+const VolumeView = ({ volume }) => {
   const { volumeInfo, averageRating } = volume;
   const {
     title,
@@ -39,10 +42,6 @@ function VolumeView({ volume }) {
     pageCount,
     previewLink
   } = volumeInfo;
-
-  console.log("authors ", authors);
-
-  console.log("average rating is ", averageRating);
   return (
     <div className="volumeContainer">
       <div className="volumeCardContainer">
@@ -65,25 +64,20 @@ function VolumeView({ volume }) {
             <p dangerouslySetInnerHTML={{ __html: `${description}` }} />
           </div>
           <div>
-            <a href={previewLink}>Read Now</a>
+            <a href={previewLink}>Read Preview at Google Books</a>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default class Volume extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { loading: true, volume: null };
-  }
+  state = { loading: true };
   async componentDidMount() {
     const id = queryString.parse(this.props.location.search);
-    console.log("the id from the string is ", id.id);
     const volume = await getVolume(id.id);
-    console.log("volume returned from api request", volume);
-    this.setState({ volume: volume }, () => {
+    this.setState({ volume }, () => {
       this.setState({ loading: false });
     });
   }

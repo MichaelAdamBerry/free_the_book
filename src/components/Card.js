@@ -2,8 +2,9 @@ import React from "react";
 import CoverImg from "./CoverImg";
 import Stars from "./Stars";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-export default function Card({ volume }) {
+const CardView = ({ volume }) => {
   return (
     <div className="card">
       <Link to={{ pathname: "/volume", search: `id=${volume.id}` }}>
@@ -27,4 +28,14 @@ export default function Card({ volume }) {
       </Link>
     </div>
   );
-}
+};
+
+const Card = ({ volume }) => {
+  return <CardView volume={volume} />;
+};
+
+Card.propTypes = {
+  volume: PropTypes.object.isRequired
+};
+
+export default Card;

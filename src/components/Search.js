@@ -5,21 +5,20 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = { query: "" };
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
+  handleChange = event => {
     const value = event.target.value;
     this.setState({ query: value });
-  }
+  };
 
   handleSubmit = event => {
-    const history = this.props.history;
+    const { history } = this.props;
+    const { query } = this.state;
     event.preventDefault();
     history.replace({
       pathname: `/list`,
-      search: `?q=${this.state.query}`
+      search: `?q=${query}`
     });
   };
 
@@ -34,4 +33,5 @@ class Search extends React.Component {
     return this.props.render({ ...this.state, actions: this.getActions() });
   }
 }
+
 export default withRouter(Search);

@@ -1,9 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default class CoverImg extends React.Component {
   state = { src: "", noImage: false };
 
-  getSrc = () => {
+  static propTypes = {
+    volumeInfo: PropTypes.object.isRequired,
+    maxRes: PropTypes.bool.isRequired
+  };
+
+  getImgSrc = () => {
+    //place holder if no image. Else if maxRes is true, highest resolution img, else lowest resolution
     const { volumeInfo, maxRes } = this.props;
     if (!volumeInfo.imageLinks) {
       return "http://www.lse.ac.uk/International-History/Images/Books/NoBookCover.png";
@@ -15,7 +22,7 @@ export default class CoverImg extends React.Component {
     }
   };
   render() {
-    const src = this.getSrc();
+    const src = this.getImgSrc();
     return <img src={src} alt="book cover" />;
   }
 }
