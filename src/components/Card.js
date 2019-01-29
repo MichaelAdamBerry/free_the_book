@@ -18,11 +18,9 @@ const CardView = ({ volume }) => {
             <CoverImg volumeInfo={volume.volumeInfo} maxRes={false} />
           </div>
           <div className="stars">
-            <span>
-              {volume.volumeInfo.averageRating && (
-                <Stars averageRating={volume.volumeInfo.averageRating} />
-              )}
-            </span>
+            {volume.volumeInfo.averageRating && (
+              <Stars averageRating={volume.volumeInfo.averageRating} />
+            )}
           </div>
         </div>
       </Link>

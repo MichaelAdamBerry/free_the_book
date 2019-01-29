@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 
 const HomeSearchView = ({ actions, query }) => {
   return (
-    <div className="homeSearch">
+    <div className="homeSearch" data-testid="homeSearch">
       <form onSubmit={actions.submitQuery}>
-        <div className="welcomeTitle">
+        <div className="welcomeTitle" data-testid="welcomeTitle">
           <h4>Welcome to free the book</h4>
         </div>
 
@@ -18,6 +18,7 @@ const HomeSearchView = ({ actions, query }) => {
             <label htmlFor="homeSearch">Title: </label>
             <input
               className="homeSearch"
+              data-testid="homeSearchInput"
               aria-label="Search for a book title"
               aria-required="true"
               type="text"
@@ -45,7 +46,7 @@ HomeSearchView.PropTypes = {
 
 const HomeView = () => {
   return (
-    <div className="home">
+    <div className="home" data-testid="home">
       <h3>Find a good book</h3>
       <Search
         render={({ actions, query }) => {

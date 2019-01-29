@@ -15,11 +15,9 @@ const Stars = ({ averageRating }) => {
           <FontAwesomeIcon icon={faStar} style={{ color: "#e2c93d" }} />
         </span>
       ))}
-      <span>
-        {partial && (
-          <FontAwesomeIcon icon={faStarHalf} style={{ color: "#e2c93d" }} />
-        )}
-      </span>
+      {partial && (
+        <FontAwesomeIcon icon={faStarHalf} style={{ color: "#e2c93d" }} />
+      )}
     </>
   );
 };
