@@ -17,10 +17,30 @@
 .volumeContainer {
   padding: 2em;
   color: #4a4646;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  background-position: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0f3fa+0,d8f0fc+50,b8e2f6+51,b6dffd+100;Shape+2+Style */
+  background: #e0f3fa; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #e0f3fa 0%,
+    #d8f0fc 50%,
+    #b8e2f6 51%,
+    #b6dffd 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #e0f3fa 0%,
+    #d8f0fc 50%,
+    #b8e2f6 51%,
+    #b6dffd 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #e0f3fa 0%,
+    #d8f0fc 50%,
+    #b8e2f6 51%,
+    #b6dffd 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .volumeContainer .card {
@@ -33,16 +53,6 @@
   margin: 10%;
 }
 
-.description {
-  padding: 1em;
-  margin: 1em;
-  max-height: 350px;
-  overflow: scroll;
-  border: solid 1px #ccc9c9;
-  background-color: #e2f5f3;
-  box-shadow: 3px 3px 3px #a7a7a2;
-}
-
 .volumeContent .miniHeader {
   display: flex;
   width: 100%;
@@ -50,18 +60,27 @@
   align-items: center;
 }
 
-.miniHeader div {
+.miniHeader .imgWrapper {
+  display: block;
+}
+
+.titleInfo {
   width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 2em;
+}
+
+.titleInfo h5 {
+  font-size: larger;
 }
 .miniHeader img {
   width: auto;
   height: fit-content;
   margin: 5px;
   border: solid 1px #2f2f2f;
+}
+
+.miniHeader {
+  display: flex;
+  justify-content: space-around;
 }
 
 .miniHeader h5 {
@@ -71,6 +90,10 @@
 .miniHeader p {
   font-size: x-small;
   margin-top: 0;
+}
+
+.description {
+  line-height: 2;
 }
 
 label {

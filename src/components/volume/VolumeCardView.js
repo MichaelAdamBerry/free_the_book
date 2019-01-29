@@ -2,6 +2,7 @@ import React from "react";
 import moment from "moment";
 import CoverImg from "../CoverImg";
 import PropTypes from "prop-types";
+import Stars from "../card/Stars";
 
 const Catagories = ({ categories }) => {
   return (
@@ -23,6 +24,7 @@ const VolumeCardView = props => {
     author,
     publishedDate,
     imageLinks,
+    averageRating,
     description,
     pageCount,
     previewLink,
@@ -31,17 +33,18 @@ const VolumeCardView = props => {
   return (
     <div className="volumeContainer">
       <div className="volumeCardContainer">
-        <div className="volumeContent card">
+        <div>
           <div className="miniHeader">
-            <div>
-              <CoverImg imageLinks={imageLinks} maxRes={false} />
+            <div className="imgWrapper">
+              <CoverImg imageLinks={imageLinks} maxRes={true} />
             </div>
-            <div>
+            <div className="titleInfo">
               <h5>{title}</h5>
               <p>{author}</p>
               <p>Published: {moment(publishedDate).format("Y")}</p>
               <p>{pageCount} pages</p>
               <Catagories categories={categories} />
+              {averageRating && <Stars averageRating={averageRating} />}
             </div>
           </div>
           <div className="description">
