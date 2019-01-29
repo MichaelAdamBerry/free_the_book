@@ -2,10 +2,7 @@ import React from "react";
 import { withRouter } from "react-router";
 
 class Search extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { query: "" };
-  }
+  state = { query: "" };
 
   handleChange = event => {
     const value = event.target.value;

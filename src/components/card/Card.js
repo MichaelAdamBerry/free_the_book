@@ -1,36 +1,31 @@
 import React from "react";
-import CoverImg from "../CoverImg";
-import Stars from "./Stars";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const CardView = ({ volume }) => {
-  return (
-    <div className="card">
-      <Link to={{ pathname: "/volume", search: `id=${volume.id}` }}>
-        <div>
-          <h4>{volume.volumeInfo.title}</h4>
-          <h5>
-            {!volume.volumeInfo.authors === false &&
-              `by ${volume.volumeInfo.authors[0]}`}
-          </h5>
-          <div className="thumbnailContainer">
-            <CoverImg volumeInfo={volume.volumeInfo} maxRes={false} />
-          </div>
-          <div className="stars">
-            {volume.volumeInfo.averageRating && (
-              <Stars averageRating={volume.volumeInfo.averageRating} />
-            )}
-          </div>
-        </div>
-      </Link>
-    </div>
-  );
-};
+//render prop Card should passes props to render prop to be consumed by List and Volume
+class Card extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      volume: this.props.volume,
+      volumeInfo: this.props.volume.volumeInfo
+    };
+  }
 
-const Card = ({ volume }) => {
-  return <CardView volume={volume} />;
-};
+  getProps = () => {
+    const volume = this.state.volume;
+    const volumeInfo = this.state.volumeInfo;
+    return {
+      id: volume.id,
+      title: volumeInfo.title ? volumeInfo.title : "",
+      author: volumeInfo.authors ? volumeInfo.authors[0] : "",
+      averageRating: volumeInfo.averageRating ? volumeInfo.averageRating : "",
+      imageLinks: volumeInfo.imageLinks ? volumeInfo.imageLinks : ""
+    };
+  };
+  render() {
+    return this.props.render({ props: this.getProps() });
+  }
+}
 
 Card.propTypes = {
   volume: PropTypes.object.isRequired

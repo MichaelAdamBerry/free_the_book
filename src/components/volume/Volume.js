@@ -48,7 +48,7 @@ const VolumeView = ({ volume }) => {
         <div className="volumeContent card">
           <div className="miniHeader">
             <div>
-              <CoverImg volumeInfo={volumeInfo} maxRes={false} />
+              <CoverImg imageLinks={volumeInfo.imageLinks} maxRes={false} />
             </div>
             <div>
               <h5>{title}</h5>

@@ -4,6 +4,7 @@ import queryString from "query-string";
 import Card from "../card/Card";
 import { Spring } from "react-spring";
 import PropTypes from "prop-types";
+import ListCardView from "./ListCardView";
 
 const ListItem = ({ volume }) => {
   //list items to fade in at random intervals from 0 to 2000ms
@@ -12,7 +13,13 @@ const ListItem = ({ volume }) => {
     <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={delay}>
       {({ opacity }) => (
         <div style={{ opacity }} className="column">
-          <Card volume={volume} />
+          <Card
+            volume={volume}
+            volumeInfo={volume.volumeInfo}
+            render={({ props }) => {
+              return <ListCardView {...props} />;
+            }}
+          />
         </div>
       )}
     </Spring>
