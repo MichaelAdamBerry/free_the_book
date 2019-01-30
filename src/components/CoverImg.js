@@ -11,17 +11,23 @@ export default class CoverImg extends React.Component {
   getSrc = () => {
     //place holder if no image. Else if maxRes is true, highest resolution img, else lowest resolution
     const { imageLinks, maxRes } = this.props;
+    const height = !maxRes ? "198px" : "300px";
     if (!imageLinks) {
-      return "http://www.lse.ac.uk/International-History/Images/Books/NoBookCover.png";
+      return {
+        key:
+          "http://www.lse.ac.uk/International-History/Images/Books/NoBookCover.png",
+        height: height
+      };
     } else {
       const imgArr = Object.keys(imageLinks);
       const key = !maxRes ? imgArr[0] : imgArr[imgArr.length - 1];
-      const height = !maxRes ? "198px" : "300px";
       return { key: imageLinks[key], height: height };
     }
   };
+
   render() {
     const src = this.getSrc();
+
     return (
       <img
         src={src.key}

@@ -4,6 +4,7 @@ import { getVolume } from "../../utils/api/google";
 import { Spring } from "react-spring";
 import Card from "../card/Card";
 import VolumeCardView from "./VolumeCardView";
+import PropTypes from "prop-types";
 
 const RenderVolume = ({ volume }) => {
   return (
@@ -21,6 +22,10 @@ const RenderVolume = ({ volume }) => {
       )}
     </Spring>
   );
+};
+
+RenderVolume.propTypes = {
+  volume: PropTypes.object.isRequired
 };
 
 export default class Volume extends React.Component {

@@ -1,6 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+export const Button = ({ onClick }) => {
+  return (
+    <button data-testid="findBooksBtn" type="submit" onClick={onClick}>
+      Find Books
+    </button>
+  );
+};
+
 const HomeSearchView = ({ actions, query }) => {
   return (
     <div className="homeSearch" data-testid="homeSearch">
@@ -23,9 +31,7 @@ const HomeSearchView = ({ actions, query }) => {
               value={query}
               onChange={actions.typeLetter}
             />
-            <button data-testid="findBooksBtn" type="submit">
-              Find Books
-            </button>
+            <Button onClick={actions.submitQuery} />
           </div>
         </div>
         <div className="sources">

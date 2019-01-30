@@ -19,9 +19,7 @@ class Card extends React.Component {
       id: volume.id,
       title: volumeInfo.title ? volumeInfo.title : "",
       author: volumeInfo.authors ? volumeInfo.authors[0] : "",
-      averageRating: volumeInfo.averageRating
-        ? volumeInfo.averageRating
-        : false,
+      averageRating: volumeInfo.averageRating ? volumeInfo.averageRating : 0,
       imageLinks: volumeInfo.imageLinks ? volumeInfo.imageLinks : "",
       description: volumeInfo.description ? volumeInfo.description : "",
       publishedDate: volumeInfo.publishedDate ? volumeInfo.publishedDate : "",

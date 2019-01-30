@@ -30,13 +30,13 @@ ListItem.propTypes = {
   volume: PropTypes.object.isRequired
 };
 
-const ListView = ({ volumes }) => {
+export const ListView = ({ volumes }) => {
   //slice search result array into two columns for rendering into rows with flex
   const middleIndex = Math.floor(volumes.length / 2);
   const colA = volumes.slice(0, middleIndex);
   const colB = volumes.slice(middleIndex);
   return (
-    <div className="listWrapper">
+    <div data-testid="listWrapper" className="listWrapper">
       {colA.map((element, index) => {
         return (
           <div className="row" key={Math.random() * 1000}>
@@ -72,7 +72,7 @@ export default class List extends React.Component {
     const { loading, volumes, query } = this.state;
     return (
       <div className="listContainer">
-        <h3>Search results for {query}:</h3>
+        <h3 data-testid="listTitle">Search results for {query}:</h3>
         {!loading && <ListView volumes={volumes} />}
       </div>
     );
