@@ -2,27 +2,18 @@ import React from "react";
 import { getVolumeList } from "../../utils/api/google";
 import queryString from "query-string";
 import Card from "../card/Card";
-import { Spring } from "react-spring";
 import PropTypes from "prop-types";
-import ListCardView from "./ListCardView";
+import CardSpring from "./ListCardView";
 
 const ListItem = ({ volume }) => {
-  //list items to fade in at random intervals from 0 to 2000ms
-  const delay = Math.floor(Math.random() * 2000);
   return (
-    <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={delay}>
-      {({ opacity }) => (
-        <div style={{ opacity }} className="column">
-          <Card
-            volume={volume}
-            volumeInfo={volume.volumeInfo}
-            render={({ props }) => {
-              return <ListCardView {...props} />;
-            }}
-          />
-        </div>
-      )}
-    </Spring>
+    <Card
+      volume={volume}
+      volumeInfo={volume.volumeInfo}
+      render={({ props }) => {
+        return <CardSpring {...props} />;
+      }}
+    />
   );
 };
 
@@ -72,7 +63,6 @@ export default class List extends React.Component {
     const { loading, volumes, query } = this.state;
     return (
       <div className="listContainer">
-        <h3 data-testid="listTitle">Search results for {query}:</h3>
         {!loading && <ListView volumes={volumes} />}
       </div>
     );

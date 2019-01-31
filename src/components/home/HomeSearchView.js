@@ -9,23 +9,20 @@ export const Button = ({ onClick }) => {
   );
 };
 
-const HomeSearchView = ({ actions, query }) => {
+const HomeSearchView = ({ actions, query, style }) => {
   return (
-    <div className="homeSearch" data-testid="homeSearch">
+    <div className="homeSearch" data-testid="homeSearch" style={style}>
       <form onSubmit={actions.submitQuery}>
         <div className="welcomeTitle" data-testid="welcomeTitle">
-          <h4>Welcome to free the book</h4>
+          <h4>Enter a Title to Get Started</h4>
         </div>
         <div>
-          <div>
-            <p>Enter a book title to get started</p>
-          </div>
           <div className="textArea">
-            <label htmlFor="homeSearch">Title: </label>
+            <label htmlFor="search-input">Title: </label>
             <input
               className="homeSearch"
-              data-testid="homeSearchInput"
-              aria-label="Search for a book title"
+              id="search-input"
+              name="search-input"
               aria-required="true"
               type="text"
               value={query}

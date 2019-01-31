@@ -4,7 +4,7 @@ import Home from "./components//home/Home";
 import Header from "./components/Header";
 import List from "./components/list/List";
 import Volume from "./components/volume/Volume";
-import "./App.css";
+//import "./index.css";
 import Footer from "./components/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
@@ -16,18 +16,19 @@ class App extends Component {
     return (
       <>
         <div className="main">
-          <Router>
-            <>
-              <Header />
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/list" component={List} />
-                <Route path="/volume" component={Volume} />
-              </Switch>
-            </>
-          </Router>
+          <div className="backgroundContainer darken-pseudo darken-with-text">
+            <Router>
+              <>
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/list" component={List} />
+                  <Route path="/volume" component={Volume} />
+                </Switch>
+              </>
+            </Router>
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </>
     );
   }
