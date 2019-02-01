@@ -1,0 +1,732 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1138,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "sWCRWJnTTF8C",
+      "etag": "y6LclCMXppQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/sWCRWJnTTF8C",
+      "volumeInfo": {
+        "title": "A Long Strange Trip",
+        "subtitle": "The Inside History of the Grateful Dead",
+        "authors": ["Dennis McNally"],
+        "publisher": "Three Rivers Press",
+        "publishedDate": "2007-12-18",
+        "description": "The complete history of one of the most long-lived and legendary bands in rock history, written by its official historian and publicist–a must-have chronicle for all Dead Heads, and for students of rock and the 1960s’ counterculture. From 1965 to 1995, the Grateful Dead flourished as one of the most beloved, unusual, and accomplished musical entities to ever grace American culture. The creative synchronicity among Jerry Garcia, Bob Weir, Phil Lesh, Bill Kreutzmann, Mickey Hart, and Ron “Pigpen” McKernan exploded out of the artistic ferment of the early sixties’ roots and folk scene, providing the soundtrack for the Dionysian revels of the counterculture. To those in the know, the Dead was an ongoing tour de force: a band whose constant commitment to exploring new realms lay at the center of a thirty-year journey through an ever-shifting array of musical, cultural, and mental landscapes. Dennis McNally, the band’s historian and publicist for more than twenty years, takes readers back through the Dead’s history in A Long Strange Trip. In a kaleidoscopic narrative, McNally not only chronicles their experiences in a fascinatingly detailed fashion, but veers off into side trips on the band’s intricate stage setup, the magic of the Grateful Dead concert experience, or metaphysical musings excerpted from a conversation among band members. He brings to vivid life the Dead’s early days in late-sixties San Francisco–an era of astounding creativity and change that reverberates to this day. Here we see the group at its most raw and powerful, playing as the house band at Ken Kesey’s acid tests, mingling with such legendary psychonauts as Neal Cassady and Owsley “Bear” Stanley, and performing the alchemical experiments, both live and in the studio, that produced some of their most searing and evocative music. But McNally carries the Dead’s saga through the seventies and into the more recent years of constant touring and incessant musical exploration, which have cemented a unique bond between performers and audience, and created the business enterprise that is much more a family than a corporation. Written with the same zeal and spirit that the Grateful Dead brought to its music for more than thirty years, the book takes readers on a personal tour through the band’s inner circle, highlighting its frenetic and very human faces. A Long Strange Trip is not only a wide-ranging cultural history, it is a definitive musical biography.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780307418777"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0307418774"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 704,
+        "printType": "BOOK",
+        "categories": ["Biography & Autobiography"],
+        "averageRating": 3.5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.3.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=sWCRWJnTTF8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=sWCRWJnTTF8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=sWCRWJnTTF8C&printsec=frontcover&dq=%22long+strange+trip%22&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=sWCRWJnTTF8C&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-sWCRWJnTTF8C"
+      },
+      "userInfo": {
+        "updated": "2019-01-22T21:04:12.484Z"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 11.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=sWCRWJnTTF8C&rdid=book-sWCRWJnTTF8C&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1.199e7,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 1.199e7,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/A_Long_Strange_Trip-sample-epub.acsm?id=sWCRWJnTTF8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/A_Long_Strange_Trip-sample-pdf.acsm?id=sWCRWJnTTF8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=sWCRWJnTTF8C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Written with the same zeal and spirit that the Grateful Dead brought to its music for more than thirty years, the book takes readers on a personal tour through the band’s inner circle, highlighting its frenetic and very human faces."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "84aLDQAAQBAJ",
+      "etag": "Wg/x2cQiKZg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/84aLDQAAQBAJ",
+      "volumeInfo": {
+        "title": "A Long Strange Trip",
+        "subtitle": "The Inside History of the Grateful Dead",
+        "authors": ["Dennis McNally"],
+        "publisher": "Three Rivers Press",
+        "publishedDate": "2003-08-01",
+        "description": "An authorized portrait of the Grateful Dead documents the band's early days on the 1960s roots and folk scene, complicated relationships between band members, intricate stage setup, and most noteworthy tours and performances.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780767911863"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0767911865"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 684,
+        "printType": "BOOK",
+        "categories": ["Biography & Autobiography"],
+        "averageRating": 3.5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=84aLDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=84aLDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=84aLDQAAQBAJ&printsec=frontcover&dq=%22long+strange+trip%22&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=84aLDQAAQBAJ&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Long_Strange_Trip.html?hl=&id=84aLDQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=84aLDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "An authorized portrait of the Grateful Dead documents the band&#39;s early days on the 1960s roots and folk scene, complicated relationships between band members, intricate stage setup, and most noteworthy tours and performances."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "TBB8rgEACAAJ",
+      "etag": "xmUQdFapYnY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/TBB8rgEACAAJ",
+      "volumeInfo": {
+        "title": "A Long Strange Trip",
+        "authors": ["Dennis McNally"],
+        "publisher": "Corgi",
+        "publishedDate": "2015-04-27",
+        "description": "Despite having few mainstream successes, The Grateful Dead acquired a dedicated following of fans. Known for their creative use of narcotics and their inspired musical experiments, they were more like a religion or a cult than a rock band.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0552171972"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780552171977"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 912,
+        "printType": "BOOK",
+        "averageRating": 3.5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=TBB8rgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=TBB8rgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=TBB8rgEACAAJ&dq=%22long+strange+trip%22&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=TBB8rgEACAAJ&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Long_Strange_Trip.html?hl=&id=TBB8rgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=TBB8rgEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Their history is the history of the modern American Revolution in the years of rage and rebellion, which were to change the country forever. Here is the band&#39;s full story."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yTBx13OJ9msC",
+      "etag": "JtZDBBQmrAY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yTBx13OJ9msC",
+      "volumeInfo": {
+        "title": "Thinking Small",
+        "subtitle": "The Long, Strange Trip of the Volkswagen Beetle",
+        "authors": ["Andrea Hiott"],
+        "publisher": "Ballantine Books",
+        "publishedDate": "2012-01-17",
+        "description": "Sometimes achieving big things requires the ability to think small. This simple concept was the driving force that propelled the Volkswagen Beetle to become an avatar of American-style freedom, a household brand, and a global icon. The VW Bug inspired the ad men of Madison Avenue, beguiled Woodstock Nation, and has recently been re-imagined for the hipster generation. And while today it is surely one of the most recognizable cars in the world, few of us know the compelling details of this car’s story. In Thinking Small, journalist and cultural historian Andrea Hiott retraces the improbable journey of this little car that changed the world. Andrea Hiott’s wide-ranging narrative stretches from the factory floors of Weimar Germany to the executive suites of today’s automotive innovators, showing how a succession of artists and engineers shepherded the Beetle to market through periods of privation and war, reconstruction and recovery. Henry Ford’s Model T may have revolutionized the American auto industry, but for years Europe remained a place where only the elite drove cars. That all changed with the advent of the Volkswagen, the product of a Nazi initiative to bring driving to the masses. But Hitler’s concept of “the people’s car” would soon take on new meaning. As Germany rebuilt from the rubble of World War II, a whole generation succumbed to the charms of the world’s most huggable automobile. Indeed, the story of the Volkswagen is a story about people, and Hiott introduces us to the men who believed in it, built it, and sold it: Ferdinand Porsche, the visionary Austrian automobile designer whose futuristic dream of an affordable family vehicle was fatally compromised by his patron Adolf Hitler’s monomaniacal drive toward war; Heinrich Nordhoff, the forward-thinking German industrialist whose management innovations made mass production of the Beetle a reality; and Bill Bernbach, the Jewish American advertising executive whose team of Madison Avenue mavericks dreamed up the legendary ad campaign that transformed the quintessential German compact into an outsize worldwide phenomenon. Thinking Small is the remarkable story of an automobile and an idea. Hatched in an age of darkness, the Beetle emerged into the light of a new era as a symbol of individuality and personal mobility—a triumph not of the will but of the imagination.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780345521446"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0345521447"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 512,
+        "printType": "BOOK",
+        "categories": ["History"],
+        "averageRating": 3.5,
+        "ratingsCount": 29,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.4.3.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yTBx13OJ9msC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yTBx13OJ9msC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=yTBx13OJ9msC&printsec=frontcover&dq=%22long+strange+trip%22&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=yTBx13OJ9msC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-yTBx13OJ9msC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 14.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 14.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=yTBx13OJ9msC&rdid=book-yTBx13OJ9msC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1.499e7,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 1.499e7,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Thinking_Small-sample-epub.acsm?id=yTBx13OJ9msC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yTBx13OJ9msC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Thinking Small is the remarkable story of an automobile and an idea."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "JHKzuq1j1mEC",
+      "etag": "sJamssA/ZgE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/JHKzuq1j1mEC",
+      "volumeInfo": {
+        "title": "Lar and Len: A Long Strange Trip",
+        "authors": ["Larry Widen", "Larry Widen and Leonard Sadorf"],
+        "publisher": "Lulu.com",
+        "publishedDate": "2006-01",
+        "description": "Come along with Lar and Len, two guys from Milwaukee, as they relive the fun of 1979. More than 150 photos of Len accompany the text.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781411660946"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1411660943"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 186,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.0.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=JHKzuq1j1mEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=JHKzuq1j1mEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=JHKzuq1j1mEC&printsec=frontcover&dq=%22long+strange+trip%22&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=JHKzuq1j1mEC&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Lar_and_Len_A_Long_Strange_Trip.html?hl=&id=JHKzuq1j1mEC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=JHKzuq1j1mEC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Come along with Lar and Len, two guys from Milwaukee, as they relive the fun of 1979. More than 150 photos of Len accompany the text."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "CyMJAQAAMAAJ",
+      "etag": "ZXiZBIY9VSk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/CyMJAQAAMAAJ",
+      "volumeInfo": {
+        "title": "20 years of Rolling stone",
+        "subtitle": "what a long, strange trip it's been",
+        "authors": ["Jann Wenner"],
+        "publisher": "Friendly Pr",
+        "publishedDate": "1987-11-01",
+        "description": "A selection of articles, interviews, and photographs from the first issue of November 9, 1967, to the end of 1987.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015013611341"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 460,
+        "printType": "BOOK",
+        "categories": ["Music"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=CyMJAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=CyMJAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=CyMJAQAAMAAJ&q=%22long+strange+trip%22&dq=%22long+strange+trip%22&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=CyMJAQAAMAAJ&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/20_years_of_Rolling_stone.html?hl=&id=CyMJAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=CyMJAQAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A selection of articles, interviews, and photographs from the first issue of November 9, 1967, to the end of 1987."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Q7zc1zkuW1kC",
+      "etag": "xV+KgmMUiYE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Q7zc1zkuW1kC",
+      "volumeInfo": {
+        "title": "What a Long, Strange Trip",
+        "authors": ["Stephen Peters"],
+        "publisher": "Da Capo Press",
+        "publishedDate": "1999",
+        "description": "A song-by-song analysis identifies the background of such Dead songs as \"New Speedway Boogie,\" \"Truckin',\" and \"Casey Jones\"",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1560252332"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781560252337"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 256,
+        "printType": "BOOK",
+        "categories": ["Music"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Q7zc1zkuW1kC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Q7zc1zkuW1kC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Q7zc1zkuW1kC&dq=%22long+strange+trip%22&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Q7zc1zkuW1kC&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/What_a_Long_Strange_Trip.html?hl=&id=Q7zc1zkuW1kC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Q7zc1zkuW1kC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A song-by-song analysis identifies the background of such Dead songs as &quot;New Speedway Boogie,&quot; &quot;Truckin&#39;,&quot; and &quot;Casey Jones&quot;"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "bkVPqjpKz2MC",
+      "etag": "eYz8vkNs7mE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bkVPqjpKz2MC",
+      "volumeInfo": {
+        "title": "Oil on the Brain",
+        "subtitle": "Adventures from the Pump to the Pipeline",
+        "authors": ["Lisa Margonelli"],
+        "publisher": "Broadway",
+        "publishedDate": "2008",
+        "description": "Looks at the economics of the petroleum industry and traces how crude oil from fields around the world eventually becomes the gasoline for automobiles, in a new edition containing an updated epilogue. Reprint. 20,000 first printing.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780767916974"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0767916972"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 330,
+        "printType": "BOOK",
+        "categories": ["History"],
+        "averageRating": 3.5,
+        "ratingsCount": 10,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bkVPqjpKz2MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bkVPqjpKz2MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=bkVPqjpKz2MC&printsec=frontcover&dq=%22long+strange+trip%22&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=bkVPqjpKz2MC&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Oil_on_the_Brain.html?hl=&id=bkVPqjpKz2MC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bkVPqjpKz2MC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Looks at the economics of the petroleum industry and traces how crude oil from fields around the world eventually becomes the gasoline for automobiles, in a new edition containing an updated epilogue. Reprint. 20,000 first printing."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "vGtx91okKycC",
+      "etag": "/AK4zjygXqU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/vGtx91okKycC",
+      "volumeInfo": {
+        "title": "The Saucier's Apprentice: One Long Strange Trip Through the Great Cooking Schools of Europe",
+        "authors": ["Bob Spitz"],
+        "publisher": "W. W. Norton & Company",
+        "publishedDate": "2009-05-04",
+        "description": "Recounts how the author, in the aftermath of his fiftieth birthday, a divorce, and a love affair gone wrong, visited some of Europe's foremost cooking schools, where he experienced comic misadventures in the face of hot-tempered chefs, local personalities, and memorable recipes. By the author of The Beatles.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780393335385"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0393335380"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 336,
+        "printType": "BOOK",
+        "categories": ["Cooking"],
+        "averageRating": 3.0,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=vGtx91okKycC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=vGtx91okKycC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=vGtx91okKycC&pg=PA3&dq=%22long+strange+trip%22&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=vGtx91okKycC&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Saucier_s_Apprentice_One_Long_Strang.html?hl=&id=vGtx91okKycC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=vGtx91okKycC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Bob Spitz. THE SAUCIER&#39;S APPRENTICE One \u003cb\u003eLong Strange Trip\u003c/b\u003e through the \u003cbr\u003e\nGreat Cooking Schools of Europe BOB SPITZ &#39;E W.W. NORTON 6: COMPANY \u003cbr\u003e\nNew York . London Copyright © 2008 by Bob Spitz All rights reserved Printed."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "c2bZAAAAMAAJ",
+      "etag": "gk7bPKnLOO8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/c2bZAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Psychedelia",
+        "subtitle": "the long strange trip",
+        "authors": ["Martin Huxley"],
+        "publisher": "Friedman-Fairfax",
+        "publishedDate": "1995-06",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000025411546"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 64,
+        "printType": "BOOK",
+        "categories": ["Biography & Autobiography"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.0.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=c2bZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=c2bZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=c2bZAAAAMAAJ&q=%22long+strange+trip%22&dq=%22long+strange+trip%22&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=c2bZAAAAMAAJ&dq=%22long+strange+trip%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Psychedelia.html?hl=&id=c2bZAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=c2bZAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    }
+  ]
+}
