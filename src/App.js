@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components//home/Home";
-import Header from "./components/Header";
 import List from "./components/list/List";
 import Volume from "./components/volume/Volume";
 //import "./index.css";
@@ -16,19 +15,17 @@ class App extends Component {
     return (
       <>
         <div className="main">
-          <div className="backgroundContainer darken-pseudo darken-with-text">
-            <Router>
-              <>
-                <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/list" component={List} />
-                  <Route path="/volume" component={Volume} />
-                </Switch>
-              </>
-            </Router>
-          </div>
-          <Footer />
+          <Router>
+            <>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/list" component={List} />
+                <Route path="/volume" component={Volume} />
+              </Switch>
+            </>
+          </Router>
         </div>
+        <Footer />
       </>
     );
   }

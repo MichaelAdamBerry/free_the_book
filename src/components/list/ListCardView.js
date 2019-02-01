@@ -20,7 +20,8 @@ class CardSpring extends React.Component {
     return (
       <Spring
         to={{
-          scale: this.state.hovered ? "1.1" : "1"
+          scale: this.state.hovered ? "1.1" : "1",
+          opacity: this.state.hovered ? 1 : 0.8
         }}>
         {({ scale, opacity }) => (
           <ListCardView

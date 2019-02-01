@@ -11,17 +11,19 @@ export default class CoverImg extends React.Component {
   getSrc = () => {
     //place holder if no image. Else if maxRes is true, highest resolution img, else lowest resolution
     const { imageLinks, maxRes } = this.props;
-    const height = !maxRes ? "198px" : "300px";
+    const width = !maxRes ? "150px" : "350px";
+    const height = !maxRes ? "300px" : "230px";
     if (!imageLinks) {
       return {
         key:
           "http://www.lse.ac.uk/International-History/Images/Books/NoBookCover.png",
+        width: width,
         height: height
       };
     } else {
       const imgArr = Object.keys(imageLinks);
       const key = !maxRes ? imgArr[0] : imgArr[imgArr.length - 1];
-      return { key: imageLinks[key], height: height };
+      return { key: imageLinks[key], width: width, height: height };
     }
   };
 
@@ -29,11 +31,13 @@ export default class CoverImg extends React.Component {
     const src = this.getSrc();
 
     return (
-      <img
-        src={src.key}
-        alt="book cover"
-        style={{ height: src.height, width: "auto" }}
-      />
+      <div>
+        <img
+          src={src.key}
+          alt="book cover"
+          style={{ height: "auto", width: `${src.width}` }}
+        />
+      </div>
     );
   }
 }
