@@ -31,7 +31,7 @@ export default class CoverImg extends React.Component {
     const src = this.getSrc();
 
     return (
-      <div>
+      <div style={{ height: "inherit", overflow: "hidden" }}>
         <img
           src={src.key}
           alt="book cover"

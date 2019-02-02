@@ -100,12 +100,13 @@ body {
   height: 50ch;
   cursor: pointer;
   will-change: transform, opacity;
+  overflow: hidden;
+  /* box-shadow: 5px 5px 10px; */
 }
 
 .back {
-  margin: 20px;
   padding: 20px;
-  background: whitesmoke;
+  background: #d6d6d6;
 }
 
 .titleInfo {
@@ -331,4 +332,10 @@ label {
 
 .card .stars {
   padding: 3px;
+}
+
+.c p {
+  padding: 30px;
+  color: #2f2f2f;
+  text-align: justify;
 }

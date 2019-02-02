@@ -3,7 +3,7 @@ import moment from "moment";
 import CoverImg from "../CoverImg";
 import PropTypes from "prop-types";
 import Stars from "../card/Stars";
-import { Spring, animated as a } from "react-spring";
+import { Spring, config, animated as a } from "react-spring";
 
 class CardFlipper extends React.Component {
   state = { flipped: false };
@@ -18,17 +18,24 @@ class CardFlipper extends React.Component {
     return (
       <div onClick={this.handleClick} className="imgWrapper">
         <Spring
+          config={key =>
+            key === "opacity"
+              ? { tension: "120", friction: "120" }
+              : config.slow
+          }
           to={{
-            opacity: flipped ? "1" : "0",
-            transform: `perspective(600px) rotateY(${flipped ? 180 : 0}deg)`,
-            config: { mass: 5, tenstion: 500, friction: 80 }
+            opacity: `${flipped ? "1" : "0"}`,
+            transform: `perspective(600px) rotateY(${
+              flipped ? "180" : "0"
+            }deg)`,
+            backgroundColor: `${flipped ? "#2f2f2f" : "#f7fbfc"}`
           }}>
           {({ opacity, transform }) => (
             <>
               <a.div
                 className="c front"
                 style={{
-                  opacity: `!${opacity}`,
+                  opacity: `${flipped ? "0" : "1"}`,
                   transform
                 }}>
                 <Front imageLinks={imageLinks} />
@@ -37,9 +44,12 @@ class CardFlipper extends React.Component {
                 className="c back"
                 style={{
                   opacity,
-                  transform: `!${transform}`
+                  transform
                 }}>
                 <Back description={description} previewLink={previewLink} />
+              </a.div>
+              <a.div className="c" style={{ opacity }}>
+                <p>{description}</p>
               </a.div>
             </>
           )}
@@ -68,14 +78,7 @@ const Front = ({ imageLinks }) => {
 };
 
 const Back = ({ description, previewLink }) => {
-  return (
-    <div className="back">
-      <div className="description">
-        <p dangerouslySetInnerHTML={{ __html: `${description}` }} />
-      </div>
-      <div />
-    </div>
-  );
+  return <div className="back" />;
 };
 
 function VolumeCardView(props) {
