@@ -92,6 +92,59 @@ body {
   margin: auto;
 }
 
+.ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 100px;
+  display: block;
+  background: #79a70a;
+  background: linear-gradient(#b6bac9 0%, #808080 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px;
+  left: -21px;
+}
+
+.ribbon {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right;
+}
+
+.ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #808080;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #808080;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #808080;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #808080;
+}
+
 .c {
   position: absolute;
   max-width: 350px;
@@ -264,11 +317,10 @@ label {
 }
 
 .card {
-  background: #f7fbfc;
-
+  background: #191818;
   margin: 30px;
-  box-shadow: 5px 5px 20px #525151;
-  border: 1px solid #5d4d4d;
+  box-shadow: 5px 5px 20px #2f2f2f;
+  border: 1px solid #191818;
   opacity: 0.8;
   border-radius: 5px;
   width: 190px;
@@ -283,6 +335,7 @@ label {
   justify-content: center;
   text-align: center;
   opacity: 0.95;
+  color: #b9b9b9;
 }
 .card a h5 {
   margin-block-start: 5px;

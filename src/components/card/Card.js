@@ -15,7 +15,9 @@ class Card extends React.Component {
     //verifies that each prop exists in volumeInfo and returns prop object
     const volume = this.state.volume;
     const volumeInfo = this.state.volumeInfo;
+
     return {
+      free: volume.accessInfo.viewability === "ALL_PAGES",
       id: volume.id,
       title: volumeInfo.title ? volumeInfo.title : "",
       author: volumeInfo.authors ? volumeInfo.authors[0] : "",

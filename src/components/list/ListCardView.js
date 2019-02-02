@@ -47,6 +47,11 @@ const ListCardView = props => {
       onMouseOver={props.onMouseOver}
       onMouseOut={props.onMouseOut}>
       <Link to={{ pathname: "/volume", search: `id=${props.id}` }}>
+        {props.free && (
+          <div class="ribbon">
+            <span>Free!</span>
+          </div>
+        )}
         <div className="listCardWidth">
           <h4>{props.title}</h4>
           <div className="thumbnailContainer">
@@ -55,6 +60,7 @@ const ListCardView = props => {
           <div className="listCardWidth">
             <h5 data-testid="bookAuthor">{props.author}</h5>
           </div>
+
           <div className="stars">
             {!props.averageRating === false && (
               <Stars averageRating={props.averageRating} />

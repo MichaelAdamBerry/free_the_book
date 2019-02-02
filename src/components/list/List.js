@@ -6,6 +6,8 @@ import PropTypes from "prop-types";
 import CardSpring from "./ListCardView";
 
 const ListItem = ({ volume }) => {
+  // check to see if book is available for free
+
   return (
     <Card
       volume={volume}
