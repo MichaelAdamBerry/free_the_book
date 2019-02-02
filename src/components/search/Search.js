@@ -2,17 +2,21 @@ import React from "react";
 import { withRouter } from "react-router";
 
 class Search extends React.Component {
-  state = { query: "" };
+  state = { query: "", noTextSubmit: false };
 
   handleChange = event => {
     const value = event.target.value;
-    this.setState({ query: value });
+    const validate = value === "";
+    this.setState({ query: value, noTextSubmit: validate });
   };
 
   handleSubmit = event => {
     const { history } = this.props;
-    const { query } = this.state;
+    const { query, noTextSubmit } = this.state;
     event.preventDefault();
+    if (noTextSubmit) {
+      return;
+    }
     history.replace({
       pathname: `/list`,
       search: `?q=${query}`

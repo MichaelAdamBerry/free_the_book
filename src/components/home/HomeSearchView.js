@@ -9,7 +9,7 @@ export const Button = ({ onClick }) => {
   );
 };
 
-const HomeSearchView = ({ actions, query, style }) => {
+const HomeSearchView = ({ actions, query, style, noTextSubmit }) => {
   return (
     <div className="homeSearch" data-testid="homeSearch" style={style}>
       <form onSubmit={actions.submitQuery}>
@@ -28,6 +28,7 @@ const HomeSearchView = ({ actions, query, style }) => {
               value={query}
               onChange={actions.typeLetter}
             />
+            {noTextSubmit && <p style={{ color: "red" }}>no search input</p>}
             <Button onClick={actions.submitQuery} />
           </div>
         </div>

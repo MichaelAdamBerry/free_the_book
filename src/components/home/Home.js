@@ -13,7 +13,7 @@ const HomeView = () => {
         {({ height, opacity }) => <Hero style={{ height, opacity }} />}
       </Spring>
       <Search
-        render={({ actions, query }) => {
+        render={({ actions, query, noTextSubmit }) => {
           return (
             <Spring
               delay={300}
@@ -24,6 +24,7 @@ const HomeView = () => {
                   actions={actions}
                   query={query}
                   style={{ height, opacity }}
+                  noTextSubmit={noTextSubmit}
                 />
               )}
             </Spring>
