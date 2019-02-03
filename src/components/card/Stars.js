@@ -9,7 +9,7 @@ const Stars = ({ averageRating }) => {
   const full = Number.parseInt(averageRating);
   const partial = Number(averageRating) % 1 > 0;
   return (
-    <>
+    <div style={{ display: "inline-flex" }}>
       {[...Array(full)].map((el, ind) => (
         <span key={Math.random() * 10}>
           <FontAwesomeIcon icon={faStar} style={{ color: "#e2c93d" }} />
@@ -18,7 +18,7 @@ const Stars = ({ averageRating }) => {
       {partial && (
         <FontAwesomeIcon icon={faStarHalf} style={{ color: "#e2c93d" }} />
       )}
-    </>
+    </div>
   );
 };
 

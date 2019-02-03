@@ -48,7 +48,7 @@ const ListCardView = props => {
       onMouseOut={props.onMouseOut}>
       <Link to={{ pathname: "/volume", search: `id=${props.id}` }}>
         {props.free && (
-          <div class="ribbon">
+          <div className="ribbon">
             <span>Free!</span>
           </div>
         )}

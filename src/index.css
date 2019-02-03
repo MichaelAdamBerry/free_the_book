@@ -22,8 +22,22 @@ body {
   flex: 1 0 auto; /* 2 */
   padding: var(--space) var(--space) 0;
   width: 100%;
-  background-color: #0000009e;
+  /* background-color: #0000009e; */
+  background: rgba(0, 0, 0, 0.1);
   z-index: -1;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  background: url(./assets/hero-img.jpg) no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
 }
 
 .hero {
@@ -146,6 +160,7 @@ body {
 }
 
 .c {
+  margin: 2em 0 2em 0;
   position: absolute;
   max-width: 350px;
   max-height: 550px;
@@ -153,8 +168,7 @@ body {
   height: 50ch;
   cursor: pointer;
   will-change: transform, opacity;
-  overflow: hidden;
-  /* box-shadow: 5px 5px 10px; */
+  overflow: scroll;
 }
 
 .back {
@@ -167,10 +181,14 @@ body {
   justify-content: space-around;
   align-items: baseline;
 }
-.miniHeader .volumeAuthor {
+.volumeAuthor {
   font-family: "Limelight", cursive;
   font-style: normal;
   margin-left: 50px;
+}
+.volumeAuthor h4 {
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .titleInfo h5 {
@@ -181,6 +199,7 @@ body {
   width: 350px;
   height: auto;
   padding: 5px;
+  border-radius: 3%;
 }
 
 .miniHeader {
@@ -391,4 +410,18 @@ label {
   padding: 30px;
   color: #2f2f2f;
   text-align: justify;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+  .titleInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .miniHeader h5,
+  .volumeAuthor,
+  .titleMeta {
+    margin-left: 0;
+  }
 }
