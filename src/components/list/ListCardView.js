@@ -60,7 +60,9 @@ const ListCardView = props => {
           <div className="listCardWidth">
             <h5 data-testid="bookAuthor">{props.author}</h5>
           </div>
-
+          <div>
+            <h5>{props.publisher}</h5>
+          </div>
           <div className="stars">
             {!props.averageRating === false && (
               <Stars averageRating={props.averageRating} />

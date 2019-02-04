@@ -26,6 +26,7 @@ class Card extends React.Component {
       description: volumeInfo.description ? volumeInfo.description : "",
       publishedDate: volumeInfo.publishedDate ? volumeInfo.publishedDate : "",
       pageCount: volumeInfo.pageCount ? volumeInfo.pageCount : "",
+      publisher: volumeInfo.publisher ? volumeInfo.publisher : "",
       previewLink: volumeInfo.previewLink ? volumeInfo.previewLink : "",
       categories: volumeInfo.categories ? volumeInfo.categories : ""
     };

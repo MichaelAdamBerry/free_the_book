@@ -1,6 +1,6 @@
 export async function getVolumeList(query) {
   try {
-    const request = "https://www.googleapis.com/books/v1/volumes?q=" + query;
+    const request = `https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=relevance&printType=books`;
     const data = await fetch(request, {
       method: "GET"
     });
