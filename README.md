@@ -1,8 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project pulls data from the google books api and creates a user interface to search for books by title. They can select options from a list of books to see more specific information about each book. If there is a free e book version of the title selected they will can navigate to the online e reader to start reading immediately. 
+This project pulls data from the google books api and creates a user interface to search for books by title. Users can select a book from the results to view more specific information about each title. If a free e-book is available, those titles are highlighted in the list and the user will be able to navigate to the online e-reader from the volume details view. 
+
+The App basically consists of three primary independent views or Routes.
+  
+The Home component renders the form and handles state for the user's title query. When submitted the url is updated to /views?=QUERY rendering the List component. 
+
+The list component pulls data from the url and React Router to make query the google api data base for a list of results. By default we are returned a list of ten book titles. Each book in the list contains specific volume data like an id and a VolumeInfo object as well as an onClick function which will route from /list?q=Query to /volume id?id=ID. Volume Id makes a separate api call to google books to fetch specific volume information.
 
 
+The project was bootstrapped using Create-React-App
 
 
 ## Dependencies 
