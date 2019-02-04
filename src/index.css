@@ -424,4 +424,8 @@ label {
   .titleMeta {
     margin-left: 0;
   }
+
+  .volumeContainer {
+    padding: 1em;
+  }
 }

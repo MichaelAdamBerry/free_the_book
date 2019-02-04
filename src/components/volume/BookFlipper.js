@@ -2,6 +2,7 @@ import React from "react";
 import { Spring, config, animated as a } from "react-spring";
 import CoverImg from "../CoverImg";
 import PropTypes from "prop-types";
+import stripHtml from "string-strip-html";
 
 const Front = ({ imageLinks }) => {
   return <CoverImg imageLinks={imageLinks} maxRes={true} width={"350px"} />;
@@ -69,7 +70,7 @@ export default class BookFlipper extends React.Component {
                 style={{
                   opacity
                 }}>
-                <p>{description}</p>
+                <p>{stripHtml(description)}</p>
               </a.div>
             </>
           )}
