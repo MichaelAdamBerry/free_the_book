@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookFlipper renders correct view when clicked 1`] = `
+<div
+  className="imgWrapper"
+  onClick={[Function]}
+>
+  <div
+    className="c front"
+    style={
+      Object {
+        "boxShadow": "rgb(51, 46, 46) 5px 5px 30px",
+        "opacity": "1",
+        "transform": "perspective(600px) rotateY(0deg)",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": "inherit",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <img
+        alt="book cover"
+        src="/"
+        style={
+          Object {
+            "height": "auto",
+            "width": "350px",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="c back"
+    style={
+      Object {
+        "border": "1.5px solid rgb(33, 33, 33)",
+        "borderRadius": "3%",
+        "boxShadow": "rgb(51, 46, 46) 5px 5px 30px",
+        "opacity": "0",
+        "transform": "perspective(600px) rotateY(0deg)",
+      }
+    }
+  >
+    <div
+      className="back"
+    />
+  </div>
+  <div
+    className="c"
+    style={
+      Object {
+        "opacity": "0",
+      }
+    }
+  >
+    <p>
+      There is a road no simple highway and if you go then you go alone
+    </p>
+  </div>
+</div>
+`;
+
+exports[`BookFlipper renders correct view when clicked 2`] = `
+<div
+  className="imgWrapper"
+  onClick={[Function]}
+>
+  <div
+    className="c front"
+    style={
+      Object {
+        "boxShadow": "rgb(51, 46, 46) 5px 5px 30px",
+        "opacity": "0",
+        "transform": "perspective(600px) rotateY(0deg)",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "height": "inherit",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <img
+        alt="book cover"
+        src="/"
+        style={
+          Object {
+            "height": "auto",
+            "width": "350px",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="c back"
+    style={
+      Object {
+        "border": "1.5px solid rgb(33, 33, 33)",
+        "borderRadius": "3%",
+        "boxShadow": "rgb(51, 46, 46) 5px 5px 30px",
+        "opacity": "0",
+        "transform": "perspective(600px) rotateY(0deg)",
+      }
+    }
+  >
+    <div
+      className="back"
+    />
+  </div>
+  <div
+    className="c"
+    style={
+      Object {
+        "opacity": "0",
+      }
+    }
+  >
+    <p>
+      There is a road no simple highway and if you go then you go alone
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Volume Component Matches Snapshot 1`] = `<div />`;
+
+exports[`VolumeCardView matches snapshot 1`] = `
+<div
+  className="volumeContainer"
+>
+  <div>
+    <div
+      className="miniHeader"
+    >
+      <div
+        className="titleInfo"
+      >
+        <h5 />
+        <p>
+          2019
+        </p>
+        <div />
+      </div>
+      <div
+        className="volumeAuthor"
+      >
+        <h4 />
+      </div>
+      <div
+        className="titleMeta"
+      >
+        <p>
+           pages
+        </p>
+      </div>
+      <div>
+        <div
+          className="imgWrapper"
+          onClick={[Function]}
+        >
+          <div
+            className="c front"
+            style={
+              Object {
+                "boxShadow": "rgb(51, 46, 46) 5px 5px 30px",
+                "opacity": "1",
+                "transform": "perspective(600px) rotateY(0deg)",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "height": "inherit",
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <img
+                alt="book cover"
+                src="http://www.lse.ac.uk/International-History/Images/Books/NoBookCover.png"
+                style={
+                  Object {
+                    "height": "auto",
+                    "width": "350px",
+                  }
+                }
+              />
+            </div>
+          </div>
+          <div
+            className="c back"
+            style={
+              Object {
+                "border": "1.5px solid rgb(33, 33, 33)",
+                "borderRadius": "3%",
+                "boxShadow": "rgb(51, 46, 46) 5px 5px 30px",
+                "opacity": "0",
+                "transform": "perspective(600px) rotateY(0deg)",
+              }
+            }
+          >
+            <div
+              className="back"
+            />
+          </div>
+          <div
+            className="c"
+            style={
+              Object {
+                "opacity": "0",
+              }
+            }
+          >
+            <p />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -3,6 +3,8 @@ import { render, cleanup, fireEvent } from "react-testing-library";
 import HomeSearchView from "../HomeSearchView";
 import { Simulate } from "react-dom/test-utils";
 import { Button } from "../HomeSearchView";
+import renderer from "react-test-renderer";
+import Home from "../Home";
 
 afterEach(cleanup);
 
