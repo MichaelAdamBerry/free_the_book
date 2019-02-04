@@ -35,6 +35,6 @@ Launches Jest. Currently tests are primarily unit and snapshot tests.
 
 Builds the app for production to the `build` folder.<br>
 
-This app is currently hosted by firebase at https://meet-your-next-book.firebaseapp.com/volume?id=qKSLzd3jiGkC
+This app is currently hosted by firebase at https://meet-your-next-book.firebaseapp.com
 
 ### `npm run eject`
