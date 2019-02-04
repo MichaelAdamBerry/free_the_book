@@ -2,15 +2,15 @@ This project pulls data from the google books api and creates a user interface t
 
 The App basically consists of three primary independent views or Routes.
 
-![home component](https://github.com/MichaelAdamBerry/home.png)
+![home component](https://github.com/MichaelAdamBerry/free-the-book/readMe-assets/home.png)
 
 The Home component renders the form and handles state for the user's title query. When submitted the url is updated to /views?=QUERY rendering the List component.
 
-![list component](https://github.com/MichaelAdamBerry/list.png)
+![list component](https://github.com/MichaelAdamBerry/free-the-book/readMe-assets/list.png)
 
 The list component pulls data from the url and React Router to make query the google api data base for a list of results. By default we are returned a list of ten book titles. Each book in the list contains specific volume data like an id and a VolumeInfo object as well as an onClick function which will route from /list?q=Query to /volume id?id=ID. Volume Id makes a separate api call to google books to fetch specific volume information.
 
-![volume component](https://github.com/MichaelAdamBerry/volume.png)
+![volume component](https://github.com/MichaelAdamBerry/free-the-book/readMe-assets/volume.png)
 
 The project was bootstrapped using Create-React-App
 
