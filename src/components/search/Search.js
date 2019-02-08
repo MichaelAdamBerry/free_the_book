@@ -17,7 +17,7 @@ class Search extends React.Component {
     if (noTextSubmit) {
       return;
     }
-    history.replace({
+    history.push({
       pathname: `/list`,
       search: `?q=${query}`
     });
