@@ -17,8 +17,7 @@ export default class BookFlipper extends React.Component {
 
   static propTypes = {
     description: PropTypes.string,
-    previewLink: PropTypes.string,
-    imageLinks: PropTypes.string
+    previewLink: PropTypes.string
   };
 
   handleClick = () => {

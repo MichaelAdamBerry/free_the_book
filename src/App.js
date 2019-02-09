@@ -5,9 +5,13 @@ import List from "./components/list/List";
 import Volume from "./components/volume/Volume";
 //import "./index.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faStar,
+  faStarHalfAlt,
+  faSpinner
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faStar, faStarHalfAlt);
+library.add(faStar, faStarHalfAlt, faSpinner);
 
 class App extends Component {
   render() {

@@ -4,6 +4,8 @@ import queryString from "query-string";
 import Card from "../card/Card";
 import PropTypes from "prop-types";
 import CardSpring from "./ListCardView";
+import Spinner from "../Spinner";
+import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 
 const ListItem = ({ volume }) => {
   return (
@@ -20,12 +22,20 @@ ListItem.propTypes = {
   volume: PropTypes.object.isRequired
 };
 
-export const ListView = ({ volumes }) => {
+export const ListView = ({ volumes, loading }) => {
   return (
     <div data-testid="listWrapper" className="listWrapper">
-      {volumes.map(volume => (
-        <ListItem volume={volume} key={Math.random() * 10} />
-      ))}
+      {!loading ? (
+        volumes.map(volume => (
+          <ListItem volume={volume} key={Math.random() * 10} />
+        ))
+      ) : (
+        <div
+          className="listContainer"
+          style={{ display: "flex", alignItems: "center", minHeight: "100vh" }}>
+          <Spinner />
+        </div>
+      )}
     </div>
   );
 };
@@ -46,17 +56,18 @@ export default class List extends React.Component {
       console.warn("the query string did not return any results from google");
       history.replace({ pathname: "/", state: { error: true } });
     } else {
-      this.setState({ volumes: volumes, query: query.q }, () => {
-        this.setState({ loading: false, noResults: false });
-      });
+      this.setState({ volumes: volumes, query: query.q });
     }
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1000);
   };
 
   render() {
     const { volumes, noResults, loading } = this.state;
     return (
       <div className="listContainer">
-        {!loading && <ListView volumes={volumes} noResults={noResults} />}
+        <ListView volumes={volumes} noResults={noResults} loading={loading} />
       </div>
     );
   }

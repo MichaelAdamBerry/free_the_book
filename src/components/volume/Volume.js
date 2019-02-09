@@ -5,6 +5,7 @@ import { Spring } from "react-spring";
 import Card from "../card/Card";
 import VolumeCardView from "./VolumeCardView";
 import PropTypes from "prop-types";
+import Spinner from "../Spinner";
 
 const RenderVolume = ({ volume }) => {
   return (
@@ -33,12 +34,23 @@ export default class Volume extends React.Component {
   async componentDidMount() {
     const urlStr = queryString.parse(this.props.location.search);
     const volume = await getVolume(urlStr.id);
-    this.setState({ volume }, () => {
+    this.setState({ volume });
+    setTimeout(() => {
       this.setState({ loading: false });
-    });
+    }, 1000);
   }
   render() {
     const { loading, volume } = this.state;
-    return <div>{!loading && <RenderVolume volume={volume} />}</div>;
+    return (
+      <div>
+        {!loading ? (
+          <RenderVolume volume={volume} />
+        ) : (
+          <div className="volumeContainer" style={{ display: "flex" }}>
+            <Spinner style={{ alignItems: "center" }} />
+          </div>
+        )}
+      </div>
+    );
   }
 }
