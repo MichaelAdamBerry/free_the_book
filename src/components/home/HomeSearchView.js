@@ -9,7 +9,19 @@ export const Button = ({ onClick }) => {
   );
 };
 
-const HomeSearchView = ({ actions, query, style, noTextSubmit }) => {
+// const NoInputError = ({ emptySubmit, noTextInput }) => {
+//   return emptySubmit && noTextInput ? (
+// ;
+// };
+
+const HomeSearchView = ({
+  actions,
+  query,
+  style,
+  emptySubmit,
+  noTextInput,
+  fromError
+}) => {
   return (
     <div className="homeSearch" data-testid="homeSearch" style={style}>
       <form onSubmit={actions.submitQuery}>
@@ -28,7 +40,16 @@ const HomeSearchView = ({ actions, query, style, noTextSubmit }) => {
               value={query}
               onChange={actions.typeLetter}
             />
-            {noTextSubmit && <p style={{ color: "red" }}>no search input</p>}
+            {emptySubmit && noTextInput ? (
+              <p style={{ color: "red" }}>no search input</p>
+            ) : (
+              <></>
+            )}
+            {fromError && (
+              <p style={{ color: "red" }}>
+                Sorry, we couldn't find any books that matched your request
+              </p>
+            )}
             <Button onClick={actions.submitQuery} />
           </div>
         </div>

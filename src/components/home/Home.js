@@ -4,7 +4,7 @@ import HomeSearchView from "./HomeSearchView";
 import { Spring } from "react-spring";
 import Hero from "./Hero";
 
-const HomeView = () => {
+const HomeView = ({ fromError }) => {
   return (
     <div className="home" data-testid="home">
       <Spring
@@ -13,7 +13,7 @@ const HomeView = () => {
         {({ height, opacity }) => <Hero style={{ height, opacity }} />}
       </Spring>
       <Search
-        render={({ actions, query, noTextSubmit }) => {
+        render={({ actions, query, noTextInput, emptySubmit }) => {
           return (
             <Spring
               delay={300}
@@ -24,7 +24,9 @@ const HomeView = () => {
                   actions={actions}
                   query={query}
                   style={{ height, opacity }}
-                  noTextSubmit={noTextSubmit}
+                  noTextInput={noTextInput}
+                  emptySubmit={emptySubmit}
+                  fromError={fromError}
                 />
               )}
             </Spring>
@@ -37,6 +39,9 @@ const HomeView = () => {
 
 export default class Home extends React.Component {
   render() {
-    return <HomeView />;
+    //if true fromError prop indicates a redirect from bad request
+    const fromError = this.props.history.action === "REPLACE" ? true : false;
+
+    return <HomeView fromError={fromError} />;
   }
 }

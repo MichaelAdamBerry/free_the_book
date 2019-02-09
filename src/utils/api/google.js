@@ -5,9 +5,10 @@ export async function getVolumeList(query) {
       method: "GET"
     });
     let items = await data.json();
-    return items.items;
+    return items.totalItems === 0 ? false : items.items;
   } catch (err) {
     console.error(err);
+    return false;
   }
 }
 
